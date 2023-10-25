@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Scraper</title>
+</head>
+<body>
+    <h1>YouTube Video Scraper</h1>
+    <form method="POST">
+        <input type="text" name="search_query" placeholder="Search YouTube" />
+        <input type="submit" value="Search" />
+    </form>
+    <ul>
+        {% for title in video_data %}
+            <li>{{ title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
